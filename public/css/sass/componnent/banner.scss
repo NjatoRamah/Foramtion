@@ -1,0 +1,43 @@
+#bg-video {
+  min-width: 100px;
+  // min-height: 50vh;
+  // max-width: 100%;
+  max-height: 60vh;
+  object-fit: cover;
+  
+  background-color: rgba(31,39,43,0.75);
+  opacity: 0.6;
+  top: -10px;
+  z-index: 2;
+  &::-webkit-media-controls {
+    display: none !important;
+  }
+}
+.video-overlay {
+  position: absolute;
+  background-color: rgba(31,39,43,0.5);
+  height: 45rem;
+  top: 0px;
+  left: 0px;
+  bottom: 0;
+  right: 2px;
+  width: 100%;
+  z-index: 0;
+}
+.main-banner {
+    position: relative;
+    max-height: 100%;
+    width: 150vh;
+    height: 15%;
+    overflow: hidden;
+    margin: -30px -30px 50px -20px;
+    top:-10px;
+}
+  @media screen and (max-width: 767px) {
+    .main-banner .caption h6 {
+      font-weight: 500;
+    }
+    .main-banner .caption h2 {
+      font-size: 36px;
+    }
+  }  

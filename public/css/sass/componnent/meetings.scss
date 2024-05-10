@@ -1,0 +1,120 @@
+
+section.upcoming-meetings {
+    background-image: url(../images/meetings-bg.jpg);
+    @include background;
+    padding-top: 230px;
+    padding-bottom: 110px;
+  }
+  
+  section.upcoming-meetings .section-heading {
+    text-align: center;
+  }
+  
+  section.upcoming-meetings .categories {
+    background-color: $blanc;
+    border-radius: 20px;
+    padding: 40px;
+    margin-right: 45px;
+  }
+  
+  section.upcoming-meetings .categories h4 {
+    @include font(18px, 600);
+    color: #1f272b;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  section.upcoming-meetings .categories ul li {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  
+  section.upcoming-meetings .categories ul li a {
+    @include font(15px, 500);
+    color: #1f272b;
+    transition: all .3s;
+  }
+  
+  section.upcoming-meetings .categories ul li a:hover {
+    color: $grena;
+  }
+  
+  section.upcoming-meetings .categories .main-button-red {
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+    margin-top: 15px;
+  }
+  
+  section.upcoming-meetings .categories .main-button-red a {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .meeting-item {
+    margin-bottom: 30px;
+  }
+  
+  .meeting-item .thumb {
+    position: relative;
+  }
+  
+  .meeting-item .thumb img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  
+  .meeting-item .thumb .price {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  
+  .meeting-item .thumb .price span {
+    @include font(16px, 600);
+    color: #1f272b;
+    background-color: rgba(250,250,250,0.9);
+    padding: 7px 12px;
+    border-radius: 10px;
+  }
+  
+  .meeting-item .down-content {
+    background-color: $blanc;
+    padding: 30px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .meeting-item .down-content .date {
+    
+    text-align: center;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .meeting-item .down-content .date h6 {
+    @include font(13px, 600);
+    text-transform: uppercase;
+    color: $grena;
+  }
+  
+  .meeting-item .down-content .date span {
+    display: block;
+    color: #1f272b;
+    font-size: 22px;
+    margin-top: 7px;
+  }
+  
+  .meeting-item .down-content h4 {
+    @include font(18px, 600);
+    color: #1f272b;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  
+  .meeting-item .down-content p {
+    margin-left: 50px;
+    color: #1f272b;
+    font-size: 14px;
+  }
+  

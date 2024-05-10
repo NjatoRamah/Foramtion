@@ -1,0 +1,315 @@
+@import 'variable.scss';
+@import 'function.scss';
+/* 
+---------------------------------------------
+reset
+--------------------------------------------- 
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+body{
+  background-color: grey;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header, nav, section, article, aside, footer, hgroup {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  background-color: $grey;
+  @include font(16px, 400);
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.link-page a{text-decoration: none;}
+.link-page a:hover{background-color: skyblue;text-align: center;}
+.link-page{width: 30px; height: 1px; opacity: 0.5;}
+.btna{text-decoration: none;}
+.desc{background: gray;color: white;text-transform: capitalize;}
+.pad{padding: 0 .5rem;}
+.btnss{border-radius: 5px;}
+a {
+  text-decoration: none !important;
+  color: $bleuciel;
+}
+
+a:hover {
+	color: $jaune;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 25px;
+  color: $p;
+}
+
+img {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* 
+---------------------------------------------
+global styles
+--------------------------------------------- 
+*/
+html,
+body {
+  background: $blanc;
+  font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+  background: $orange;
+  color: $blanc;
+}
+
+::-moz-selection {
+  background: $orange;
+  color: $blanc;
+}
+
+@media (max-width: 991px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  .mobile-top-fix {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .mobile-bottom-fix {
+    margin-bottom: 30px;
+  }
+  .mobile-bottom-fix-big {
+    margin-bottom: 60px;
+  }
+}
+
+.main-button-red a {
+  @include font(13px, 500);
+  color: $blanc;
+  background-color:$grena ;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 22px;
+  text-transform: uppercase;
+  transition: all .3s;
+}
+
+.main-button-red a:hover {
+  opacity: 0.9;
+}
+
+.main-button-yellow a {
+  @include font(13px, 500);
+  color: $blanc;
+  background-color: $orange;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 22px;
+  text-transform: uppercase;
+  transition: all .3s;
+}
+
+.main-button-yellow a:hover {
+  opacity: 0.9;
+}
+
+.section-heading h2 {
+  line-height: 40px;
+  margin-top: 0px;
+  margin-bottom: 50px; 
+  padding-bottom: 20px;
+  border-bottom: 1px solid $grey;
+  @include font(22px, 700);
+  text-transform: uppercase;
+  color: $blanc;
+}
+/* 
+---------------------------------------------
+header
+--------------------------------------------- 
+*/
+@import 'componnent/sub-header.scss';
+@import 'componnent/header.scss';
+/* 
+---------------------------------------------
+banner
+--------------------------------------------- 
+*/
+@import 'componnent/banner.scss';
+/*
+---------------------------------------------
+services
+---------------------------------------------
+*/
+@import 'componnent/services.scss';
+/*
+---------------------------------------------
+upcoming meetings
+---------------------------------------------
+*/
+@import 'componnent/meetings.scss';
+
+/*
+---------------------------------------------
+apply now
+---------------------------------------------
+*/
+@import 'componnent/apply.scss';
+/* 
+---------------------------------------------
+courses
+--------------------------------------------- 
+*/
+@import 'componnent/course.scss';
+/*
+---------------------------------------------
+our facts
+---------------------------------------------
+*/
+@import 'componnent/facts.scss';
+/* 
+---------------------------------------------
+contact us
+--------------------------------------------- 
+*/
+@import 'componnent/contact.scss';
+/* 
+---------------------------------------------
+contact us
+--------------------------------------------- 
+*/
+@import 'componnent/contac.scss';
+
+/* 
+---------------------------------------------
+responsive
+--------------------------------------------- 
+*/
+@import 'componnent/responsive.scss';
+/*
+---------------------------------------------
+footer
+---------------------------------------------
+*/
+@import 'componnent/footer.scss';
+/*
+---------------------------------------------
+card
+---------------------------------------------
+*/
+@import 'componnent/card.scss';
+/*
+---------------------------------------------
+hero
+---------------------------------------------
+*/
+@import 'componnent/hero.scss';
+/*
+---------------------------------------------
+login
+---------------------------------------------
+*/
+@import 'componnent/login.scss';
+/*
+---------------------------------------------
+partenaria
+---------------------------------------------
+*/
+@import 'componnent/partenaria.scss';
+/*
+---------------------------------------------
+search
+---------------------------------------------
+*/
+@import 'componnent/search.scss';
+/*
+---------------------------------------------
+info
+---------------------------------------------
+*/
+@import 'componnent/info.scss';
+/*
+---------------------------------------------
+info
+---------------------------------------------
+*/
+@import 'componnent/carte.scss';
+/*
+---------------------------------------------
+footer
+---------------------------------------------
+*/
+@import 'componnent/footer.scss';
+/*
+/*
+---------------------------------------------
+slider
+---------------------------------------------
+*/
+@import 'componnent/slider.scss';
+/*
+--------------------------------------------
+formation detail
+-------------------------------------------
+*/
+@import 'componnent/formationdetail.scss';
+/*
+--------------------------------------------
+about
+--------------------------------------------
+*/
+@import 'componnent/about.scss';
+/*
+caroussel
+*/
+// @import 'componnent/carousel.scss';

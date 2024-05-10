@@ -1,0 +1,44 @@
+    public function modinfos(Request $req){
+        $this->validate($req, [
+            "id" => "required",
+            "email" => "required",
+            "Adresse" => "required",
+        ]);
+        $id=$req->input('id');
+        $info = info::find($id);
+        $info->email = $req->input('email');
+        $info->Adresse = $req->input('Adresse');
+        $info->update();
+
+        return redirect()->Route('listeinfo');
+    }
+
+    public function ajoutinfos(Request $req){
+        $this->validate($req, [
+            "email" => "required",
+            "Adresse" => "required",
+        ]);
+        $info = new info();
+        $info->email = $req->input('email');
+        $info->Adresse = $req->input('Adresse');
+        $info->save();
+
+        return redirect()->Route('listeinfo');
+
+    }
+    public function listeinfo(){
+        $info = DB::table('infos')->orderByDesc('id')->get();
+        return view('admin.page.info.liste', compact('info'));
+    }
+    public function ajoutinfo(){
+        return view('admin.page.info.ajout');
+    }
+    public function suprimmerinfo(string $id){
+        $suprinfo = info::findOrFail($id);
+        $suprinfo->delete();
+        return redirect ()->Route('listeinfo')->with('success', 'suprimer avec succées');
+    }
+    public function modifierinfo($id){
+        $info = DB::table('infos')->find($id);
+        return view('admin.page.info.modifie', compact('info'));
+    }

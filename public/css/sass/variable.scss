@@ -1,0 +1,61 @@
+$orange: #3d0707;
+$blanc: #fff;
+$grey: rgba(68, 67, 67, 0.945);
+$p:#2a2a2a;
+$jaune: rgb(51, 255, 211);
+$bleuciel: #3CF;
+$grena:#3d0707;
+$width:100%;
+$h:100%;
+$bg:background;
+$w:width;
+$s:#6b1e00;
+$wh:#fff;
+$p:#3e8da8;
+$d:#333;
+$r:#e91111;
+$lo:#4070f4;
+$g:#888;
+$tra:all 0.3s ease;
+$bs:0 1px 2px rgba(0, 0, 0, 0.2);
+$tran:rotate(180deg);
+$bc: #00f7ff;
+:root{
+    --light: #D9D9D9;
+    --gray: #9c9c9c;
+    --orange: rgba(37, 36, 36, 0.75);
+    --darkGrey: #464D53;
+    --caloryCard: #656565;
+    --planCard: linear-gradient(210.41deg, #79706f 1.14%, #066b0e 100.75%);
+    --appColor: #3c3f45;
+}
+.App{
+    mix-blend-mode: overlay;
+    background-color: var(--appColor);
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    overflow: hidden;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.stroke-text{
+     color: transparent;
+     font-family: Arial, Helvetica, sans-serif;
+     -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: rgb(218, 205, 205);
+}
+.btn{
+    background-color: wheat;
+    padding: 0.5 rem;
+    font-weight: bold;
+    border: 4px solid transparent;
+    transition: 300ms all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn:hover{
+    cursor: pointer;
+}

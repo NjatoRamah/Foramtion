@@ -1,0 +1,147 @@
+/***********login personnel**********/
+.perso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: flex;
+    background: 0 1px 2px #1f242d;
+  }
+  
+  .login-box {
+    position: relative;
+    @include taille (100vh, 50vh);
+    @include form(flex, center, center, flex);
+    
+    border-radius: 20px;
+    opacity: 0;
+    animation: cardLeft 1s ease forwards;
+    animation-delay:1.2s;
+
+  }
+  .ito {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    @include font(32px, 700);
+    opacity: 0;
+    animation: cardBottom 2s ease forwards;
+    animation-delay:.7s;
+    height: auto;
+  }
+  
+  .input-box {
+    position: relative;
+    width: 610px;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+    opacity: 0;
+    animation: cardRight 1.5s ease forwards;
+    animation-delay:.9s;
+  }
+  .input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    color: #fff;
+    transition: 0.5s;
+  }
+  .input-box input {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 35px 0 5px;
+  }
+  .input-box input:focus ~ label, .input-box input:valid ~ label {
+    top: -5px;
+  }
+  .input-box .icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+  }
+  
+  .peso {
+    width: 70%;
+    height: 40px;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    color: #333;
+    
+    opacity: 0;
+    animation: cardRight 1s ease forwards;
+    animation-delay:.9s;
+
+    
+    
+  }
+  
+//   .login-light{
+//     @include position(absolute, -123px, 50%);
+//     transform: translateX(-50%);
+//    @include taille(500px, 10px);
+//    background-color: $bc;
+//    border-radius: 20px;
+//   }
+//   .toggle{
+//     @include posi(absolute, 20px, -70px);
+//     @include taille(60px, 120px);
+//     background-color: $d;
+//     border-radius: 10px;
+//     &::before{
+//         content: '';
+//         @include position(absolute,50%,50%);
+//         transform: translate(-50%, -50%);
+//         @include taille(10px, 80px);
+//         background-color: $d;
+//     }
+//   }
+//   .input-check{
+//      position: absolute;
+//      right: -70px;
+//      z-index: 1;
+//      opacity: 0;
+//   }
+@keyframes cardRight{
+    0%{
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes cardBottom{
+    0%{
+        transform: translateY(-400px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes cardLeft{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 0.7;
+    }
+}

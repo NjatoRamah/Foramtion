@@ -1,0 +1,47 @@
+
+
+.search-box{
+    @include taille(40px, 40px);
+    position: relative;
+    i{
+        color: $wh;
+        @include taille(100%, 100%);
+        position: absolute;
+        line-height: 40px;
+        text-align: center;
+        @include font(22px, 600);
+    }
+    .input-box{
+        @include taille(300px, 60px);
+        background-color: $p;
+        @include posi(absolute, 80px, calc(100% - 40px));
+        border-radius: 6px;
+        opacity: 0;
+        pointer-events: none;
+        transition: $tra;
+    }
+}
+.main-nav.showInput .search-box .input-box{
+    opacity: 1;
+    pointer-events: auto;
+    top: 65px;
+}
+.search-box .input-box{
+    &::before{
+        content: '';
+        @include taille(20px, 20px);
+        @include posi(absolute, -6px, 10px);
+        transform: rotate(45deg);
+        background: $p;
+    }
+    input{
+        @include taille(280px, 35px);
+        @include positions(absolute, 50%, 50%, 98);
+        transform: translate(-50%, -50%);
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        padding: 0 15px;
+        font-size: 16px;
+    }
+}

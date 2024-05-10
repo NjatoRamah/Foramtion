@@ -1,0 +1,40 @@
+.right-infos {
+    background-color: $grena;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    right: 2.5rem;
+    top: 9rem;
+    width: 20rem;
+    opacity: 0;
+    animation: cardBottom 1s ease forwards;
+    animation-delay:1.2s;
+    ul li {
+      display: inline-block;
+      border-bottom: 1px solid $grey;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      opacity: 0;
+      animation: cardTop 1s ease forwards;
+      animation-delay:2s;
+      
+      &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+      h6 {
+        color: $blanc;
+        @include font(15px, 600);
+        margin-bottom: 10px;
+        opacity: 0;
+        animation: cardLeft 1s ease forwards;
+        animation-delay:2.2s;
+      }
+      span {
+        display: block;
+        @include font(18px, 700);
+        color: $blanc;
+      }
+    }
+  }

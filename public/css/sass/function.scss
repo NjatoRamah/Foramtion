@@ -1,0 +1,103 @@
+
+@mixin background ($bp:center center, $ba:fixed, $br:no-repeat, $bs: cover){
+    background-position: $bp;
+    background-attachment: $ba;
+    background-repeat: $br;
+    background-size: $bs;
+}
+@mixin backgrounds ($bp:center center, $br:no-repeat, $bs: cover){
+    background-position: $bp;
+    background-repeat: $br;
+    background-size: $bs;
+}
+@mixin font($fs, $fw){
+    font-size: $fs;
+    font-weight: $fw;
+}
+@mixin taille($w, $h){
+    width: $w;
+    height: $h;
+}
+
+@mixin padding($pt,$pl,$pr,$pb){
+    padding-top: $pt;
+    padding-left: $pl;
+    padding-right: $pr;
+    padding-bottom: $pb;
+}
+@mixin position($pos:absolute,$top:0,$le:0){
+    position: $pos;
+    top: $top;
+    left: $le;
+}
+@mixin positions($pos:relative,$top:0,$le:0,$z:0){
+    position: $pos;
+    top: $top;
+    left: $le;
+    z-index: $z;
+}
+@mixin posi($pos:absolute,$top:0,$ri:0){
+    position: $pos;
+    top: $top;
+    right: $ri;
+}
+@mixin footer($pos:fixed, $r:0, $l:0, $b:0){
+    position: $pos;
+    right: $r;
+    left: $l;
+    bottom: $b;
+}
+
+@mixin forms($di:flex, $te:center, $fld:row, $ove:hidden){
+    display: $di;
+    text-align: $te;
+    flex-direction: $fld;
+    overflow: $ove;
+}
+@mixin sec($di:flex, $te:center, $fld:row, $ove:auto){
+    display: $di;
+    text-align: $te;
+    flex-direction: $fld;
+    overflow: $ove;
+}
+@mixin form($display:flex, $align-items:center, $jcont:space-between, $flex:row) {
+    display: $display;
+    align-items:$align-items;
+    justify-content:$jcont;
+    flex-direction: $flex;
+}
+@mixin form-wrap($display:flex, $align-items:center, $jcont:space-between, $flex:row,$wrap:wrap) {
+    display: $display;
+    align-items:$align-items;
+    justify-content:$jcont;
+    flex-direction: $flex;
+    flex-wrap: $wrap;
+}
+@mixin margin($mt,$ml,$mr,$mb){
+    margin-top: $mt;
+    margin-left: $ml;
+    margin-right: $mr;
+    margin-bottom: $mb;
+}
+
+@mixin bg($image,$pos,$size,$rep:no-repeat,$bbm) {
+    background: url($image);
+    background-position: $pos;
+    background-size: $size;
+    background-repeat: $rep;
+    background-blend-mode: $bbm;
+}
+@mixin bgim($size:cover,$color,$opacity:1,$position:center,$repeat:no-repeat) {
+    background-size: $size;
+    background: rgba($color, $opacity)$repeat;
+    background-position: $position;
+    background-blend-mode:multiply;
+}
+@mixin disbo($b:0 0 4px 4px, $d:none) {
+    border-radius: $b;
+    display: $d;
+}
+@mixin opatra($o, $tr) {
+    opacity: $o;
+    transition: $tr;
+}

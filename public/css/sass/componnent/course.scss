@@ -1,0 +1,119 @@
+
+section.our-courses {
+    background-image: url(../images/meetings-bg.jpg);
+    @include background;
+    padding-top: 140px;
+    padding-bottom: 130px;
+  }
+  
+  .our-courses {
+    .item .down-content {
+      background-color: $blanc;
+      h4 {
+        padding: 25px;
+        font-size: 18px;
+        color: #1f272b;
+        text-align: center; 
+        border-bottom: 1px solid #eee;
+      }
+      .info {
+        padding: 25px;
+        ul li {
+          display: inline-block;
+          margin-right: 1px;
+          i {
+            color: $orange;
+            font-size: 14px;
+          }
+        }
+        span {
+          color: $grena;
+          @include font(15px, 600);
+          text-align: right;
+          display: inline-block;
+          width: 100%;
+        }
+      }
+    }
+    .owl-nav {
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-45px);
+      .owl-prev{
+        margin-right: 10px;
+        outline: none;
+        position: absolute;
+        left: -80px;
+        &:before {
+          display: inline-block;
+          font-family: 'FontAwesome';
+          color: #1e1e1e;
+          @include font(25px, 700);
+          content: '\f104';
+          background-color: $blanc;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          line-height: 50px;
+        }
+      }
+      .owl-prev {
+        opacity: 1;
+        transition: all .5s;
+        &:hover {
+          opacity: 0.9;
+        }      
+      }
+      .owl-next {
+        opacity: 1;
+        transition: all .5s;
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+      .owl-next{
+        margin-left: 10px;
+        outline: none;
+        position: absolute;
+        right: -85px;
+        &:before {
+          display: inline-block;
+          font-family: 'FontAwesome';
+          color: #1e1e1e;
+          @include font(25px, 700);
+          content: '\f105';
+          background-color: $blanc;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          line-height: 50px;
+        }
+      } 
+    }
+    .owl-dots {
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      margin-top: 40px;
+      .owl-dot {
+        transition: all .5s;
+        @include taille(7px, 7px);
+        background-color: $blanc;
+        margin: 0px 5px;
+        border-radius: 50%;
+        outline: none;
+      }
+      .active {
+        width: 24px;
+        height: 8px;
+        border-radius: 4px;
+      }    
+    }
+  }
+  .our-courses .owl-nav .owl-prev span,
+  .our-courses .owl-nav .owl-next span {
+    opacity: 0;
+  }
+ 

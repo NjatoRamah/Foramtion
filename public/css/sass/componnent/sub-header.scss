@@ -1,0 +1,32 @@
+.sub-header {
+    background-color: $grena;
+    position: fixed;
+    z-index: 11;
+    @include taille(100%, 5%);
+    .left-content p {
+        color: $blanc;
+        padding: 0px 0px;
+        font-size: 13px;
+        em {
+            font-style: normal;
+            color: $wh;
+         }
+         
+      }
+    .right-icons {
+    text-align: right;
+    padding: 8px 0px;
+    ul li {
+        display: inline-block;
+        margin-left: 15px;
+        a {
+            color: $blanc;
+            font-size: 14px;
+            transition: all .3s;
+            &:hover {
+                color: $orange;
+              }
+          }
+      }
+    }
+  }

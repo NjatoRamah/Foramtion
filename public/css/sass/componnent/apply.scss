@@ -1,0 +1,81 @@
+
+section.apply-now {
+    background-image: url(../images/back.jpg);
+    background-blend-mode: lighten;
+    @include background;
+    background-color: rgba(80, 79, 79, 0.5);
+
+    padding: 140px 0px;
+    .item {
+      background-color: $grey;
+      padding: 40px;
+      margin-bottom: 30px;
+      opacity: 0;
+      animation: cardBottom 1s ease forwards;
+      animation-delay:1.2s;
+      h3 {
+        color: $blanc;
+        text-transform: uppercase;
+        @include font(24px, 700);
+        margin-bottom: 20px;
+        opacity: 0;
+        animation: cardLeft 1s ease forwards;
+        animation-delay:1.2s;
+      }
+      p {
+        color: $blanc;
+        margin-bottom: 20px;
+        opacity: 0;
+        animation: cardTop 1s ease forwards;
+        animation-delay:1.2s;
+      }
+      
+    }
+  }
+  .accordions {
+    border-radius: 20px;
+    padding: 40px;
+    background-color: $blanc;
+    margin-left: 45px;
+    .accordion {
+      border-bottom: 1px solid $blanc;
+    }
+    .last-accordion {
+      border-bottom: none;
+    }
+    &-head {
+      padding: 20px; 
+      @include font(18px, 700);
+      color: #1f272b;
+      cursor: pointer;
+      transition: color 200ms ease-in-out;
+      border-bottom: 1px solid $blanc;
+      .icon {
+        float: right;
+        transition: transform 200ms ease-in-out;
+      }
+      &.is-open {
+        color: $orange;
+        border-bottom: none;
+        .icon {
+          transform: rotate(45deg);
+        }
+      }
+    }
+    &-body {
+      overflow: hidden;
+      height: 0;
+      transition: height 300ms ease-in-out;
+      border-bottom: 1px solid $blanc;
+      > .content {
+        padding: 20px;
+        padding-top: 0;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .accordion-head {
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+  } 

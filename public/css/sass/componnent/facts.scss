@@ -1,0 +1,53 @@
+
+section.our-facts {
+    background-image: url(../../../images/article.jpg);
+    background-blend-mode: lighten;
+    @include background;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 140px 0px 125px 0px;
+    h2 {
+      @include font(38px, 700);
+      color: $orange;
+      line-height: 50px;
+      letter-spacing: 0.5px;
+      margin-bottom: 50px;
+    }
+    .video {
+      text-align: center;
+      margin-left: 70px;
+      background-image: url(../../../images/14.jpg);
+     @include backgrounds;
+      border-radius: 20px;
+      img {
+        padding: 170px 0px;
+        max-width: 56px;
+      }
+    }
+  }
+  .count-area-content {
+    text-align: center;
+    background-color: $grey;
+    border-radius: 20px;
+    padding: 25px 30px 35px 30px;
+    margin: 15px 0px;
+  }
+  
+  .percentage .count-digit:after {
+    content: '%';
+    margin-left: 3px;
+  }
+  
+  .count-digit {
+      margin: 5px 0px;
+      color: $orange;
+      @include font(36px, 700);
+  }
+  .count-title {
+      @include font(18px, 500);
+      color: $blanc;
+      letter-spacing: 0.5px;
+  }
+  
+  .new-students {
+    margin-top: 45px;
+  }

@@ -1,0 +1,56 @@
+@import '__component/function';
+@import '__component/variable';
+@import '__component/connection';
+:root{
+    /*--------------color------------*/
+    --primary-color:#3d0707;
+    --panel-color:#3d0707;
+    --text-color:#000;
+    --black-light-color:#707070;
+    --border-color:#e6e5e5;
+    --toggle-color:#ddd;
+    --box1-color:#3d0707;
+    --box2-color:#707070;
+    --box3-color:#09f31c;
+    --box4-color:#640808;
+    --box5-color:#db0505;
+    --title-icon-color:#fff;
+    /*---------------Transition --------------*/
+    --tran-05:all 0.5s ease;
+    --tran-03:all 0.3s ease;
+    --tran-02:all 0.2s ease;
+} 
+body{
+    min-height: 100vh;
+    background-color: var(--panel-color);
+    &.dark{
+        --primary-color:#3a3b3c;
+        --panel-color:#242526;
+        --text-color:#fff;
+        --black-light-color:#fff;
+        --border-color:#4d4c4c;
+        --toggle-color:#fff;
+        --box1-color:#3a3b3c;
+        --box2-color:#3a3b3c;
+        --box3-color:#3a3b3c;
+        --box4-color:#3a3b3c;
+        --box5-color:#3a3b3c;
+        --title-icon-color:#ccc;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.choose{
+    font-size: 20px;
+    padding: 0 2%;
+    }
+    
+/*********navbar et dashboard------------*/
+@import '__component/navdash';
+/*********registration----------*/
+@import '__component/registration';
+@import '__component/table.scss';

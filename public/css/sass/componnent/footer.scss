@@ -1,0 +1,197 @@
+/* info section */
+.info_section {
+  background-color:  var(--orange);
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  
+
+  h5 {
+    margin-bottom: 12px;
+    font-size: 22px;
+  }
+}
+
+.info_logo-box {
+  display: flex;
+  justify-content: center;
+
+  h2 {
+    font-weight: bold;
+    padding: 5px 35px;
+    border-bottom: 1.5px solid $grena;
+  }
+
+}
+
+
+.info_section {
+  ul {
+    padding: 0;
+
+    li {
+      list-style-type: none;
+      margin: 3px 0;
+
+      a {
+        color: #ffffff;
+
+        &:hover {
+          color: $grena;
+        }
+      }
+    }
+  }
+}
+
+
+.info_section .form_container {
+  input {
+    width: 225px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  &::placeholder {
+    color: #ccc8c8;
+  }
+
+  button {
+    background-color: $grena;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 8px 30px;
+    margin-top: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+}
+
+
+.social_container {
+  width: 95%;
+  margin: 0 auto;
+  border-top: 1px solid #898989;
+  padding: 25px 0;
+}
+
+.info_section .social-box {
+  margin: 0 auto;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 35px;
+    margin-right: 5px;
+  }
+
+}
+
+/* end info section */
+
+/* footer section*/
+
+.footer_section {
+  background-color: $grena;
+  padding: 20px;
+}
+
+.footer_section p {
+  margin: 0;
+  text-align: center;
+  color: $wh;
+}
+
+.footer_section {
+  a {
+    color: $wh;
+  }
+}
+
+// end footer section
+//foter
+
+.foter{
+  width: 100%;
+  height: 12vh;
+  background: $grena;
+  position: relative;
+  animation: test l;
+}
+.wave{
+  width: 100%;
+  height: 100px;
+  background: url(../../../images/wave.png);
+  background-color: $grena;
+  background-size: 1000px 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.wave1{
+  animation: wave1 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+  color: $grena;
+}
+@keyframes wave1 {
+  to{
+      background-position-x: 0px;
+  }
+  from{
+      background-position-x: 1000px;
+
+  }
+}
+.wave2{
+  animation: wave2 15s linear infinite;
+  z-index: 999;
+  opacity: .5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+@keyframes wave2 {
+  to{
+      background-position-x: 0px;
+  }
+  from{
+      background-position-x: -1000px;
+
+  }
+}
+.wave3{
+  animation: wave3 15s linear infinite;
+  z-index: 998;
+  opacity: .2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+@keyframes wave3 {
+  to{
+      background-position-x: 0px;
+  }
+  from{
+      background-position-x: 1000px;
+
+  }
+}
+.wave4{
+  animation: wave4 15s linear infinite;
+  z-index: 997;
+  opacity: .7;
+  animation-delay: -8s;
+  bottom: 20px;
+}
+@keyframes wave4 {
+  to{
+      background-position-x: 0px;
+  }
+  from{
+      background-position-x: -1000px;
+
+  }
+}
